@@ -14,5 +14,6 @@ namespace ProgramowanieRozproszone_1.Model
         public string LastName { get; set; }
         public int Age { get; set; }
         public DateTime LastPositiveTest { get; set; }
+        public string Email { get; set; }
     }
 }

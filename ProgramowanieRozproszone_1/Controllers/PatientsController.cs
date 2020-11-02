@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PR.Modul1.Services;
 using ProgramowanieRozproszone_1.Model;
 
 namespace ProgramowanieRozproszone_1.Controllers
@@ -14,10 +15,12 @@ namespace ProgramowanieRozproszone_1.Controllers
     public class PatientsController : ControllerBase
     {
         private readonly DataContext _context;
+        private readonly ServiceBusSender _sender;
 
-        public PatientsController(DataContext context)
+        public PatientsController(DataContext context, ServiceBusSender sender)
         {
             _context = context;
+            _sender = sender;
         }
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -34,6 +37,12 @@ namespace ProgramowanieRozproszone_1.Controllers
         {
             _context.Patients.Add(p);
             await _context.SaveChangesAsync();
+            await _sender.SendMessage(new MessagePayload()
+            {
+                EmailAddress = "marcin@wp.pl",
+                Title = "Covid19",
+                Message = "idziesz na kwarantanne"
+            });
             return Created(uri: "/api/users/" + p.Id, p);
         }
     }
