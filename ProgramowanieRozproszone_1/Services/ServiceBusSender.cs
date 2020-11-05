@@ -29,8 +29,9 @@ namespace PR.Modul1.Services
 
     public class MessagePayload
     {
+        public string EventName { get; set; }
         public string EmailAddress { get; set; }
-        public string Title { get; set; }
-        public string Message { get; set; }
+        public string Subject { get; set; }
+        public string Body { get; set; }
     }
 }

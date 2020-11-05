@@ -39,9 +39,10 @@ namespace ProgramowanieRozproszone_1.Controllers
             await _context.SaveChangesAsync();
             await _sender.SendMessage(new MessagePayload()
             {
-                EmailAddress = "marcin@wp.pl",
-                Title = "Covid19",
-                Message = "idziesz na kwarantanne"
+                EventName = "NewUserRegistered",
+                EmailAddress = p.Email,
+                Subject = "Covid19",
+                Body = "idziesz na kwarantanne"
             });
             return Created(uri: "/api/users/" + p.Id, p);
         }

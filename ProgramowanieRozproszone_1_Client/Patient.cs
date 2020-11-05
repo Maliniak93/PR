@@ -20,7 +20,7 @@ namespace ProgramowanieRozproszone_1_Client.Model
         public async Task ShowPatients()
         {
             List<Patient> patients;
-            HttpResponseMessage response = await client.GetAsync("https://localhost:44376/api/patients");
+            HttpResponseMessage response = await client.GetAsync("https://localhost:5001/api/patients");
                 if (response.IsSuccessStatusCode)
                 {
                 var result = response.Content.ReadAsStringAsync().Result;
@@ -49,7 +49,7 @@ namespace ProgramowanieRozproszone_1_Client.Model
 
             string patientJson = JsonConvert.SerializeObject(patient);
 
-            await client.PostAsync("https://localhost:44376/api/patients",
+            await client.PostAsync("https://localhost:5001/api/patients",
                 new StringContent(patientJson, Encoding.UTF8, "application/json"));
             Console.WriteLine("Pacjent : " + patient.FirstName + " " + patient.LastName + " został pomyślnie stworzony!");
             Console.ReadKey();
