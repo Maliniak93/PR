@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ namespace ProgramowanieRozproszone_1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PatientsController : ControllerBase
     {
         private readonly DataContext _context;
@@ -44,7 +46,7 @@ namespace ProgramowanieRozproszone_1.Controllers
                 Subject = "Covid19",
                 Body = "idziesz na kwarantanne"
             });
-            return Created(uri: "/api/users/" + p.Id, p);
+            return Created(uri: "/api/patients/" + p.Id, p);
         }
     }
 }

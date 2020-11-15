@@ -1,5 +1,7 @@
-﻿using ProgramowanieRozproszone_1_Client.Model;
+﻿
+using ProgramowanieRozproszone_1_Client.Model;
 using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace ProgramowanieRozproszone_1_Client
@@ -28,5 +30,6 @@ namespace ProgramowanieRozproszone_1_Client
                 goto Start;
             }
         }
+
     }
 }
