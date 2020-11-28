@@ -24,6 +24,14 @@ namespace ProgramowanieRozproszone_1.Controllers
             _context = context;
             _sender = sender;
         }
+
+        [HttpPut]
+        [AllowAnonymous]
+        public IActionResult InvalidAction()
+        {
+            throw new InvalidOperationException("Problem z aplikacją");
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

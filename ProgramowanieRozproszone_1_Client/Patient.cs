@@ -23,6 +23,8 @@ namespace ProgramowanieRozproszone_1_Client.Model
         {
             client.DefaultRequestHeaders.Authorization = BasicAuthenticationHeaderValue.Parse(await GetToken());
             List<Patient> patients;
+            await client.PutAsync("https://localhost:5001/api/patients",
+            new StringContent("elo"));
             HttpResponseMessage response = await client.GetAsync("https://localhost:5001/api/patients");
             if (response.IsSuccessStatusCode)
             {
@@ -51,7 +53,6 @@ namespace ProgramowanieRozproszone_1_Client.Model
             patient.Email = Console.ReadLine();
 
             string patientJson = JsonConvert.SerializeObject(patient);
-
             await client.PostAsync("https://localhost:5001/api/patients",
                 new StringContent(patientJson, Encoding.UTF8, "application/json"));
             Console.WriteLine("Pacjent : " + patient.FirstName + " " + patient.LastName + " został pomyślnie stworzony!");

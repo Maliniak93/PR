@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Logging;
 using PR.Modul1.Services;
 using ProgramowanieRozproszone_1.Model;
+using Serilog;
 
 namespace ProgramowanieRozproszone_1
 {
@@ -30,7 +31,10 @@ namespace ProgramowanieRozproszone_1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplicationInsightsTelemetry();
+
             services.AddScoped<ServiceBusSender>();
+
             services.AddControllers(x =>
             {
                 x.RespectBrowserAcceptHeader = true;
@@ -60,6 +64,8 @@ namespace ProgramowanieRozproszone_1
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSerilogRequestLogging();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
