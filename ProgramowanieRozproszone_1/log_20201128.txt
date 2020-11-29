@@ -325,3 +325,6 @@ FROM [Patients] AS [p]
 2020-11-28 12:25:38.120 +01:00 [DBG] Connection id "0HM4JI05RCPSQ" disconnecting.
 2020-11-28 12:25:38.125 +01:00 [DBG] Connection id "0HM4JI05RCPSQ" stopped.
 2020-11-28 12:25:38.128 +01:00 [DBG] Connection id "0HM4JI05RCPSQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2020-11-28 12:32:42.270 +01:00 [INF] Application is shutting down...
+2020-11-28 12:32:42.271 +01:00 [DBG] Hosting stopping
+2020-11-28 12:32:42.277 +01:00 [DBG] Hosting stopped

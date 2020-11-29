@@ -1,0 +1,25 @@
+2020-11-28 12:31:45.794 +01:00 [DBG] Hosting starting
+2020-11-28 12:31:45.901 +01:00 [INF] User profile is available. Using 'C:\Users\Dominik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-28 12:31:45.917 +01:00 [DBG] Reading data from file 'C:\Users\Dominik\AppData\Local\ASP.NET\DataProtection-Keys\key-9ddaac00-31ec-441e-b630-664712695a2f.xml'.
+2020-11-28 12:31:45.931 +01:00 [DBG] Reading data from file 'C:\Users\Dominik\AppData\Local\ASP.NET\DataProtection-Keys\key-a36c8582-4099-4086-ac0c-fa2b681b647b.xml'.
+2020-11-28 12:31:45.939 +01:00 [DBG] Found key {9ddaac00-31ec-441e-b630-664712695a2f}.
+2020-11-28 12:31:45.944 +01:00 [DBG] Found key {a36c8582-4099-4086-ac0c-fa2b681b647b}.
+2020-11-28 12:31:45.957 +01:00 [DBG] Considering key {a36c8582-4099-4086-ac0c-fa2b681b647b} with expiration date 2021-01-03 20:24:43Z as default key.
+2020-11-28 12:31:45.965 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-28 12:31:45.968 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2020-11-28 12:31:45.970 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-11-28 12:31:45.974 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-11-28 12:31:45.977 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-11-28 12:31:45.981 +01:00 [DBG] Using key {a36c8582-4099-4086-ac0c-fa2b681b647b} as the default key.
+2020-11-28 12:31:45.982 +01:00 [DBG] Key ring with default key {a36c8582-4099-4086-ac0c-fa2b681b647b} was loaded during application startup.
+2020-11-28 12:31:46.450 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2020-11-28 12:31:46.481 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: B19BE56B0B3907835A2512BD77C9170A2F5F4AFF)
+2020-11-28 12:31:46.489 +01:00 [INF] Now listening on: https://localhost:5002
+2020-11-28 12:31:46.491 +01:00 [DBG] Loaded hosting startup assembly ProgramowanieRozproszone_Notification
+2020-11-28 12:31:46.492 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-11-28 12:31:46.493 +01:00 [INF] Hosting environment: Development
+2020-11-28 12:31:46.494 +01:00 [INF] Content root path: C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozproszone_Notification
+2020-11-28 12:31:46.496 +01:00 [DBG] Hosting started
+2020-11-28 12:32:41.640 +01:00 [INF] Application is shutting down...
+2020-11-28 12:32:41.641 +01:00 [DBG] Hosting stopping
+2020-11-28 12:32:41.647 +01:00 [DBG] Hosting stopped

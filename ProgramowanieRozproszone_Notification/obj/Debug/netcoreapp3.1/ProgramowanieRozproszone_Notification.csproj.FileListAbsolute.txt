@@ -64,3 +64,6 @@ C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozpros
 C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozproszone_Notification\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
 C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozproszone_Notification\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
 C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozproszone_Notification\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozproszone_Notification\bin\Debug\netcoreapp3.1\Serilog.Sinks.ApplicationInsights.dll
+C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozproszone_Notification\obj\Debug\netcoreapp3.1\ProgramowanieRozproszone_Notification.csproj.CoreCompileInputs.cache
+C:\Users\Dominik\Desktop\Projekty\Programowanie Rozproszone\ProgramowanieRozproszone_Notification\obj\Debug\netcoreapp3.1\ProgramowanieRozproszone_Notification.MvcApplicationPartsAssemblyInfo.cache

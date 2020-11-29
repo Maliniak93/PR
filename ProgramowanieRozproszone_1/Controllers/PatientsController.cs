@@ -33,9 +33,11 @@ namespace ProgramowanieRozproszone_1.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _context.Patients.ToListAsync());
+            //return Ok("eloelo");
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
